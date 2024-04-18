@@ -11,13 +11,15 @@ void main() {
 
 class MyApp extends StatelessWidget {
   final Widget? child;
+
   const MyApp({this.child, Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-        create: (context) => Database(),
+        create: (context) => DatabaseViewModel(),
         child: MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(
             primarySwatch: Colors.deepPurple,

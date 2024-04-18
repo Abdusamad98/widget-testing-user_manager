@@ -26,7 +26,7 @@ class ArchivedUsers extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 30.0),
-        child: Consumer<Database>(builder: (context, database, child) {
+        child: Consumer<DatabaseViewModel>(builder: (context, database, child) {
           return database.archivedUsers.isNotEmpty
               ? ListView.builder(
                   itemCount: database.archivedUsers.length,

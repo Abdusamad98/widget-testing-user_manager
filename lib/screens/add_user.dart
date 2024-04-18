@@ -51,8 +51,8 @@ class AddUser extends StatelessWidget {
                         _lastNameController.text.isEmpty) return;
 
                     //Retrieve the Database Provider
-                    Database database =
-                        Provider.of<Database>(context, listen: false);
+                    DatabaseViewModel database =
+                        Provider.of<DatabaseViewModel>(context, listen: false);
                     //Create User with the first name and last name
                     User user = User(
                         _firstNameController.text, _lastNameController.text);

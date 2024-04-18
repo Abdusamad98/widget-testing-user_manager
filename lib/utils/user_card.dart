@@ -12,7 +12,7 @@ class UserCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Database database = Provider.of<Database>(context);
+    DatabaseViewModel database = Provider.of<DatabaseViewModel>(context);
 
     return Card(
       child: Container(

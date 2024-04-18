@@ -3,7 +3,7 @@ import 'package:user_manager/utils/source_enum.dart';
 
 import 'user.dart';
 
-class Database extends ChangeNotifier {
+class DatabaseViewModel extends ChangeNotifier {
   List<User> activeUsers = [];
   List<User> archivedUsers = [];
 

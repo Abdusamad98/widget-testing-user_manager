@@ -28,7 +28,7 @@ class ActiveUsers extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 30.0),
-        child: Consumer<Database>(builder: (context, database, child) {
+        child: Consumer<DatabaseViewModel>(builder: (context, database, child) {
           return database.activeUsers.isNotEmpty
               ? ListView.builder(
                   itemCount: database.activeUsers.length,
